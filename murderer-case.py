@@ -72,3 +72,21 @@ if start == "":
                 print("Mission 1 was a Success!!")
                 os.system("clear")
                 slowprint("THE END!")
+              else:
+                os.system("clear")
+                print("You have been arrested.")
+                print("Have a good life in jail!")
+                os.system("clear")
+                slowprint("THE END!")
+          else:
+            os.system("clear")
+            print("You have been arrested.")
+            print("Have a good life in jail!")
+            os.system("clear")
+            slowprint("THE END!")
+      else:
+        os.system("clear")
+        print("You have been arrested.")
+        print("Have a good life in jail!")
+        os.system("clear")
+        slowprint("THE END!")
