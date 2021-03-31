@@ -1,6 +1,12 @@
 import random
 from time import sleep
 import os
+import sys
+def slowprint(text):
+  for x in text:
+    print(x, end="")
+    sys.stdout.flush()
+    sleep(0.1)
 start = input("Pres ENTER to start the game. "
 if start == "":
   os.system("clear")
@@ -30,11 +36,39 @@ if start == "":
       mc = x,y
       pc = x1,y1
       print("You are on the coordinate of",x1,",",y1)
-      print("There is a murderer on the loose. You have to catch him. When you receive the message that you are near him, type kill and you will win this game.")
+      print("There is a murderer on the loose. You have to catch him. When you receive the message that you are near him, Type kill and you will win this game. ")
       for i in range(10):
         if pc == mc:
           os.system("clear")
-          kill = input("You are near the killer, type kill now  ")
+          kill = input("You are near the killer, type 'kill' now.  ")
           if kill == "kill":
            print("Mission 1 was a success.")
-        move = input("If you press 8 you go 1 step forword. If you press 2 you go 1 step back. If you press 4 you go 1 step left and if you press 6 you go 1 step right.")
+           os.system("clear")
+           slowprint("THE END!")
+        move = input("If you press 8 you go 1 step forword. If you press 2 you go 1 step back. If you press 4 you go 1 step left and if you press 6 you go 1 step right. ")
+        if move = "8":
+          y1 = y1 + 1
+          os.system("clear")
+          print("You are on ", x1," ,", y1)
+        if move = "2":
+          y1 = y1 + 1
+          os.system("clear")
+          print("You are on ", x1," ,", y1)
+        if move = "4":
+          y1 = y1 + 1
+          os.system("clear")
+          print("You are on ", x1," ,", y1)
+        if move = "6":
+          y1 = y1 + 1
+          os.system("clear")
+          print("You are on ", x1," ,", y1)
+      if pc == mc;
+        oc.system("clear")
+        kill = input("You need backup to come immediately! Type 'emergency'.")
+          if emergency == "emergency":
+            kill = input("You are near the killer. Type 'kill' NOW! ")
+              if kill = "kill":
+                os.system("clear")
+                print("Mission 1 was a Success!!")
+                os.system("clear")
+                slowprint("THE END!")
